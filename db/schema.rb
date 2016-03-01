@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20160301005801) do
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.string   "team_one"
-    t.string   "team_two"
-    t.datetime "start_time"
-    t.integer  "game_length"
+    t.string   "team_one",    null: false
+    t.string   "team_two",    null: false
+    t.datetime "start_time",  null: false
+    t.integer  "game_length", null: false
   end
 
 end
