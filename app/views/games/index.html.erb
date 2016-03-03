@@ -1,1 +1,11 @@
-ALL DA GAMES GO HERE
+<% @games.each do |game| %>
+  <h1>
+  <%= game.team_one + " vs " + game.team_two %>
+  </h1>
+  <h3>
+  <%= game.start_time %>
+  </h3>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ujgQOosyIYk" frameborder="0" allowfullscreen></iframe>
+  </br>
+<% end %>
